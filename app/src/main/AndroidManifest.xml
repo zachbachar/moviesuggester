@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.zachapps.moviesuggester">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.Toolbar">
+
+        <activity android:name=".ActivitySplash"
+            android:theme="@style/AppTheme.Toolbar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ActivityList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivityMovie"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivitySearch"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivityTrailer"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivityWatchList"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ActivityCredits"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

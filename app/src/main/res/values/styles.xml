@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+
+        <!--<item name="android:windowEnterTransition" tools:targetApi="lollipop">@transition/shared_element_transition</item>-->
+        <!--<item name="android:windowExitTransition" tools:targetApi="lollipop">@transition/shared_element_transition</item>-->
+
+        <!--&lt;!&ndash; specify shared element transitions &ndash;&gt;-->
+        <!--<item name="android:windowSharedElementEnterTransition" tools:targetApi="lollipop">-->
+            <!--@transition/shared_element_transition</item>-->
+        <!--<item name="android:windowSharedElementExitTransition" tools:targetApi="lollipop">-->
+            <!--@transition/shared_element_transition</item>-->
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Search" parent="Theme.AppCompat.Dialog">
+        <item name="android:theme">@style/AppTheme.Toolbar</item>
+    </style>
+
+    <style name="MyCustomTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_out</item>
+    </style>
+
+</resources>

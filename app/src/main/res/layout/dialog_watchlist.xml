@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:theme="@style/MyCustomTheme">
+
+    <LinearLayout
+        android:id="@+id/sortAlpha"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_sort_by_alpha_white_36dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/txtSort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_watchlist_sort_alpha"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/refresh"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_refresh_white_36dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/txtRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_watchlist_refresh"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/credits"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_info_outline_white_36dp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/txtCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_watch_list_credits"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

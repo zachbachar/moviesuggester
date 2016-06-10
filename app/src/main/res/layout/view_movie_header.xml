@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/titleContainer"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtMovieTitle"
+                android:transitionName="title"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:text="movie title"
+                android:paddingRight="10dp"
+                android:maxLines="2"
+                android:textSize="27sp"
+                autofit:minTextSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtMovieYear"
+                android:transitionName="year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="(year)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtMovieGeners"
+                android:transitionName="geners"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="gener|gener|gener"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:maxLines="1"
+                autofit:minTextSize="13sp"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txtMovieLength"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="length"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                autofit:minTextSize="13sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMovieReleased"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="bottom|left"
+            android:textSize="16sp"
+            android:text="Released"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/movie_header_rating"
+            android:gravity="center|bottom"/>
+
+        <TextView
+            android:id="@+id/txtMovieRating"
+            android:transitionName="rating"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Rating"
+            android:gravity="center|top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:text="@string/movie_header_votes"/>
+
+        <TextView
+            android:id="@+id/txtMovieVotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:text="votes"/>
+
+    </LinearLayout>
+
+</LinearLayout>
